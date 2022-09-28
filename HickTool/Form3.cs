@@ -21,7 +21,7 @@ namespace HickTool
         private void button1_Click(object sender, EventArgs e)
         {
             var client = new WebClient();
-            client.DownloadFile("https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-win-3.1.3-32bit.exe", "C:\\HickTool\\Audacity.exe");
+            client.DownloadFile("https://github.com/audacity/audacity/releases/download/Audacity-3.2.0/audacity-win-3.2.0-64bit.exe", "C:\\HickTool\\Audacity.exe");
             MessageBox.Show("Done");
         }
 
