@@ -57,7 +57,7 @@ namespace HickTool
         private void button6_Click(object sender, EventArgs e)
         {
             var client = new WebClient();
-            client.DownloadFile("https://cdn-fastly.obsproject.com/downloads/OBS-Studio-28.0.1-Full-Installer-x64.exe", "C:\\HickTool\\obs.exe");
+            client.DownloadFile("https://cdn-fastly.obsproject.com/downloads/OBS-Studio-28.0.2-Full-Installer-x64.exe", "C:\\HickTool\\obs.exe");
             MessageBox.Show("Done");
       
         }
