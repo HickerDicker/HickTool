@@ -9,6 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Disable the warning.
+#pragma warning disable SYSLIB0014
+
+// Code that uses obsolete API.
+// ...
+
 namespace HickTool
 {
     public partial class Form3 : Form
@@ -75,7 +81,7 @@ namespace HickTool
         private void button6_Click(object sender, EventArgs e)
         {
             var client = new WebClient();
-            client.DownloadFile("https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack43.zip", "C:\\HickTool\\VBCABLE.exe");
+            client.DownloadFile("https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack43.zip", "C:\\HickTool\\VBCABLE.zip");
             MessageBox.Show("Done");
         }
 
@@ -103,7 +109,7 @@ namespace HickTool
         private void button12_Click(object sender, EventArgs e)
         {
             var client = new WebClient();
-            client.DownloadFile("https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC", "C:\\HickTool\\PyCharm.exe");
+            client.DownloadFile("https://download.jetbrains.com/python/pycharm-community-2022.2.2.exe", "C:\\HickTool\\PyCharm.exe");
             MessageBox.Show("Done");
         }
 
@@ -112,6 +118,18 @@ namespace HickTool
             var client = new WebClient();
             client.DownloadFile("https://javadl.oracle.com/webapps/download/AutoDL?BundleId=246808_424b9da4b48848379167015dcc250d8d", "C:\\HickTool\\Java.exe");
             MessageBox.Show("Done");
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Form4 f = new Form4();
+            f.Show();
+            this.Close();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

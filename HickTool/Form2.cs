@@ -22,7 +22,6 @@ namespace HickTool
         private void button1_Click(object sender, EventArgs e)
         {
             var client = new WebClient();
-
             client.DownloadFile("https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B361A0C05-B3CA-6287-EF93-AE022EEEE4F8%7D%26lang%3Den%26browser%3D3%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26installdataindex%3Dempty/chrome/install/ChromeStandaloneSetup64.exe", "C:\\HickTool\\Chrome.exe");
             MessageBox.Show("Done");
 

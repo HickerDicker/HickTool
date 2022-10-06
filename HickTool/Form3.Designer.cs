@@ -54,6 +54,7 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
+            this.button14 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -89,7 +90,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(713, 407);
+            this.button3.Location = new System.Drawing.Point(93, 407);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 31);
             this.button3.TabIndex = 4;
@@ -328,11 +329,22 @@
             this.textBox16.TabIndex = 31;
             this.textBox16.Text = " Virtual Audio Cable";
             // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(690, 404);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(98, 34);
+            this.button14.TabIndex = 32;
+            this.button14.Text = "next page";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button14);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox14);
@@ -361,6 +373,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,5 +407,6 @@
         private TextBox textBox14;
         private TextBox textBox15;
         private TextBox textBox16;
+        private Button button14;
     }
 }
